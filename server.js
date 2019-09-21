@@ -10,8 +10,8 @@ app.use(
 
 connectDb();
 
-app.use("/api/login", require("./routes/login"));
-app.use("/api/register", require("./routes/register"));
+app.use("/login", require("./routes/login"));
+app.use("/register", require("./routes/register"));
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
